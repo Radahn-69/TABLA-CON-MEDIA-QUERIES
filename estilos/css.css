@@ -1,0 +1,142 @@
+       body {
+           font-family: Arial, sans-serif;
+           background: #f5f5f7;
+           margin: 16px;
+       }
+
+       form {
+           max-width: 720px;
+           margin: auto;
+           background: #fff;
+           padding: 12px;
+           border: 1px solid #ddd;
+           border-radius: 6px;
+       }
+
+       h1 {
+           font-size: 1.1rem;
+           margin: 0 0 12px;
+       }
+
+       .g {
+           margin: 8px 0;
+       }
+
+       label {
+           display: block;
+           margin-bottom: 4px;
+       }
+
+       input,
+       select {
+           width: 100%;
+           padding: 8px;
+           border: 1px solid #cfcfd4;
+           border-radius: 4px;
+           font-size: 1rem;
+       }
+
+       .acciones {
+           margin-top: 12px;
+       }
+
+       button {
+           padding: 9px 12px;
+           border: 1px solid #0b6bcb;
+           background: #1177dd;
+           color: #fff;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+
+       button+button {
+           margin-left: 6px;
+           background: #eef3f9;
+           color: #0b6bcb;
+           border-color: #a7c7ef;
+       }
+
+       /* Media Queries para PC y Celular */
+       @media screen and (min-width: 769px) {
+           body {
+               background: #1B3B6F;
+               color: #ffffff;
+           }
+
+           form {
+               background: #ffffff;
+               box-shadow: 0 4px 12px rgba(27, 59, 111, 0.2);
+               border-color: #2A4A7F;
+           }
+
+           h1 {
+               color: #1B3B6F;
+           }
+
+           button {
+               background: #1B3B6F;
+               border-color: #152C52;
+           }
+
+           button:hover {
+               background: #152C52;
+           }
+
+           button+button {
+               background: #E8EDF5;
+               color: #1B3B6F;
+               border-color: #1B3B6F;
+           }
+
+           input:focus,
+           select:focus {
+               border-color: #1B3B6F;
+               box-shadow: 0 0 0 3px rgba(27, 59, 111, 0.1);
+           }
+       }
+
+       @media screen and (max-width: 768px) {
+           body {
+               background: #E8F5E9;
+               padding: 12px;
+           }
+
+           form {
+               background: #ffffff;
+               box-shadow: 0 4px 12px rgba(76, 175, 80, 0.1);
+               border-color: #A5D6A7;
+           }
+
+           h1 {
+               color: #2E7D32;
+               text-align: center;
+           }
+
+           button {
+               width: 100%;
+               background: #4CAF50;
+               border-color: #2E7D32;
+               margin-bottom: 8px;
+           }
+
+           button:active {
+               background: #2E7D32;
+           }
+
+           button+button {
+               background: #E8F5E9;
+               color: #2E7D32;
+               border-color: #A5D6A7;
+               margin-left: 0;
+           }
+
+           .acciones {
+               flex-direction: column;
+           }
+
+           input:focus,
+           select:focus {
+               border-color: #4CAF50;
+               box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+           }
+       }
